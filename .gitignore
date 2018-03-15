@@ -1,0 +1,5 @@
+# IDE files
+/.idea/
+
+# 3rd-party dependencies
+/node_modules/
