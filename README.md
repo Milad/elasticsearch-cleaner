@@ -19,7 +19,7 @@ npm i elasticsearch-cleaner
 ### CLI
 
 ```bash
-es-cleaner --url=<...> [--days=30] [--reg-exp=[0-9]{4}-[0-9]{2}-[0-9]{2}$] [--no-pretend]
+es-cleaner --url=<...> [--days=30] [--reg-exp=[0-9]{4}-[0-9]{2}-[0-9]{2}$] [--for-real]
 ```
 Options:
 - `--help`: Show help
@@ -31,7 +31,7 @@ Options:
 - `--reg-exp` or `-r`: Regex Expression to match the date part of the index name.
     - Default: `[0-9]{4}-[0-9]{2}-[0-9]{2}$` (Matches `YYYY-MM-DD` at the end).
     - A string that will be passed to `new RegExp`.
-- `--no-pretend`: A flag to actually delete the indices. By default the tool doesn't delete anything, it only shows you what it would delete.
+- `--for-real`: A flag to actually delete the indices. By default the tool doesn't delete anything, it only shows you what it would delete.
     - Required to actually delete the indices.
 
 ### As JS Module
@@ -47,12 +47,12 @@ const ElasticSearchCleaner = require('elasticsearch-cleaner');
 const url = 'https://elasticsearch:example.com';
 const age = 30;
 const regexp = '[0-9]{4}-[0-9]{2}-[0-9]{2}$';
-const noPretend = true;
+const forReal = true;
 
-const elasticSearchCleaner = new ElasticSearchCleaner(url, age, regexp, noPretend);
+const elasticSearchCleaner = new ElasticSearchCleaner(url, age, regexp, forReal);
 
 elasticSearchCleaner.exec();
 ```
 
 ## License
-Unlicense
+MIT
