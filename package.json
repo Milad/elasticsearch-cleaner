@@ -6,10 +6,10 @@
   "main": "lib/ElasticSearchCleaner.js",
   "scripts": {},
   "dependencies": {
-    "axios": "^0.19.2",
-    "chalk": "^3.0.0",
-    "update-notifier": "^4.1.0",
-    "yargs": "^15.3.1"
+    "axios": "^0.21.0",
+    "chalk": "^4.1.0",
+    "update-notifier": "^5.0.1",
+    "yargs": "^16.1.0"
   },
   "bin": {
     "es-cleaner": "bin/cli.js"
