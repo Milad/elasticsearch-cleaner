@@ -1,7 +1,7 @@
 {
   "name": "elasticsearch-cleaner",
   "description": "Asynchronously prune your Elastic Search indices.",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "private": false,
   "main": "lib/ElasticSearchCleaner.js",
   "scripts": {},
