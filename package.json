@@ -8,7 +8,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "chalk": "^4.1.0",
-    "update-notifier": "^5.0.1",
+    "update-notifier": "^6.0.2",
     "yargs": "^16.2.0"
   },
   "bin": {
